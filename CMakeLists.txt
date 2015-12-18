@@ -3,7 +3,7 @@ project(CGeneralRepo)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-add_subdirectory (CFirst)
-add_subdirectory (CSecond)
+add_subdirectory (CIntro)
+add_subdirectory (CStructuredProgrammingDev)
 
 #[[set(SOURCE_FILES )]]
