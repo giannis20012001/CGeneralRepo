@@ -14,11 +14,11 @@ int main () {
     printf("%s", "Give the Second integer: ");
     scanf("%d", &integerB);
 
-    printf("%s %d \n", "sum:", (integerA + integerB));
-    printf("%s %d \n", "product:", (integerA * integerB));
-    printf("%s %d \n", "difference:", (integerA - integerB));
-    printf("%s %d \n", "quotient:", (integerA / integerB));
-    printf("%s %d \n", "remainder:", (integerA % integerB));
+    printf("%s %d \n", "sum: ", (integerA + integerB));
+    printf("%s %d \n", "product: ", (integerA * integerB));
+    printf("%s %d \n", "difference: ", (integerA - integerB));
+    printf("%s %d \n", "quotient: ", (integerA / integerB));
+    printf("%s %d \n", "remainder: ", (integerA % integerB));
 
     return 0;
 
