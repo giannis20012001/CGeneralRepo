@@ -14,14 +14,11 @@ int main () {
     printf("%s", "Give the Second integer: ");
     scanf("%d", &integerB);
 
-    if (integerA > integerB)
-        puts("The First integer is larger");
-
-    if (integerB > integerA)
-        puts("The Second integer is larger");
-
-    if (integerA == integerB)
-        puts("The two integers are equals");
+    printf("%s %d \n", "sum:", (integerA + integerB));
+    printf("%s %d \n", "product:", (integerA * integerB));
+    printf("%s %d \n", "difference:", (integerA - integerB));
+    printf("%s %d \n", "quotient:", (integerA / integerB));
+    printf("%s %d \n", "remainder:", (integerA % integerB));
 
     return 0;
 
