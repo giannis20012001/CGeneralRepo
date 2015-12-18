@@ -3,5 +3,8 @@ project(CGeneralRepo)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp)
-add_executable(CGeneralRepo ${SOURCE_FILES})
+add_subdirectory (first)
+
+
+#[[set(SOURCE_FILES main.cpp first/Arithmetic.c)
+add_executable(CGeneralRepo ${SOURCE_FILES})]]
