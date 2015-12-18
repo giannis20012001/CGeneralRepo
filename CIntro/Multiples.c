@@ -15,10 +15,10 @@ int main () {
     scanf("%d", &integerB);
 
     if ((integerB % integerA) == 0)
-        puts("");
+        puts("The first integer is a multiple of the second");
 
     if ((integerB % integerA) != 0)
-        puts("");
+        puts("The first integer is not a multiple of the second");
 
     return 0;
 
