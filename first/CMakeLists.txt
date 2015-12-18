@@ -1,5 +1,5 @@
-# Add executable called "CGeneralRepo" that is built from the source files
-# "Arithmetic.c". The extensions are automatically found.
+# Add executables.
+# The extensions are automatically found.
 add_executable(Arithmetic Arithmetic.c)
 add_executable(ComparingIntegers ComparingIntegers.c)
 add_executable(PrintingValues PrintingValues.c)
@@ -7,3 +7,5 @@ add_executable(ArithmeticComparingInt ArithmeticComparingInt.c)
 add_executable(CircleCalc CircleCalc.c)
 add_executable(ShapesWithAsterisks ShapesWithAsterisks.c)
 add_executable(LargestSmalest LargestSmalest.c)
+add_executable(OddEven OddEven.c)
+add_executable(Initials Initials.c)
