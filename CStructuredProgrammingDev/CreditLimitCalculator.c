@@ -5,9 +5,9 @@
 #include <stdio.h>
 
 int main (void) {
-    unsigned int counter = 0;
     int accountNumber = 0;
     float beginningBalance = 0.0;
+    float finalBalance;
     float totalCharges = 0.0;
     float totalCredits = 0.0;
     float creditLimit = 0.0;
@@ -24,14 +24,20 @@ int main (void) {
         printf("%s", "Enter credit limit: ");
         scanf("%f", &creditLimit);
 
-        printf("%s", "Enter account number (-1 to end): ");
+        finalBalance = (beginningBalance + totalCharges) - totalCredits;
+
+        if (finalBalance > creditLimit) {
+            printf("%s %d\n", "Account:      ", accountNumber);
+            printf("%s %0.2f\n", "Credit limit: ", creditLimit);
+            printf("%s %0.2f\n", "Balance:      ", finalBalance);
+            printf("%s\n\n", "Credit Limit Exceeded.\n");
+        }
+
+
+        printf("\n\n%s", "Enter account number (-1 to end): ");
         scanf("%d", &accountNumber);
 
     }
-    if (counter != 0)
-        printf("%s %f", "\n\nThe overall average miles/gallon was ", (average / counter));
-    else
-        printf("%s", "\n\nTough Luck....");
 
     return 0;
 
