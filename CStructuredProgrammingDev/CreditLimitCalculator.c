@@ -34,7 +34,7 @@ int main (void) {
         }
 
 
-        printf("\n\n%s", "Enter account number (-1 to end): ");
+        printf("\n%s", "Enter account number (-1 to end): ");
         scanf("%d", &accountNumber);
 
     }
