@@ -5,24 +5,28 @@
 #include <stdio.h>
 
 int main (void) {
-    int term = 0;
-    float rate = 0;
-    float principal = 0;
-    float interest = 0;
+    int workHours = 0;
+    float hourlyRate = 0;
+    float total = 0;
 
-    printf("%s", "Enter loan principal (-1 to end): ");
-    scanf("%f", &principal);
-    while (principal != -1) {
-        printf("%s", "Enter interest rate: ");
-        scanf("%f", &rate);
-        printf("%s", "Enter term of the loan in days: ");
-        scanf("%d", &term);
+    printf("%s", "Enter # of hours worked (-1 to end): ");
+    scanf("%d", &workHours);
+    while (workHours != -1) {
+        printf("%s", "Enter hourly rate of the worker ($00.00): ");
+        scanf("%f", &hourlyRate);
 
-        interest = principal * rate * ((float)term/365);
-        printf("%s %0.2f\n\n", "The interest charge is $", interest);
+        if (workHours > 40) {
+            total = ((float)40 * hourlyRate) + ((float)(workHours - 40) * (hourlyRate + (hourlyRate / 2)));
 
-        printf("%s", "Enter loan principal (-1 to end): ");
-        scanf("%f", &principal);
+        }
+        else {
+            total = (float)workHours * hourlyRate;
+
+        }
+        printf("%s %0.2f\n\n", "Salary is $", total);
+
+        printf("%s", "Enter # of hours worked (-1 to end): ");
+        scanf("%d", &workHours);
 
     }
     return 0;
