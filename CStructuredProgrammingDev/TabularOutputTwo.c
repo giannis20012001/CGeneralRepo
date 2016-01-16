@@ -5,19 +5,20 @@
 #include <stdio.h>
 
 int main (void) {
-    int counter = 0;
+    int outerCounter = 3;
+    int innerCounter = 2;
 
-    printf("%s\t%s\t%s\t%s\n", "N", "10*N", "100*N", "1000*N");
-    while (counter < 10) {
-        printf("%d\t", (counter + 1));
-        printf("%d\t\t", ((counter + 1) * 10));
-        if (counter < 9)
-            printf("%d\t\t", ((counter + 1) * 100));
-        else
-            printf("%d\t", ((counter + 1) * 100));
+    printf("%s\t%s\t%s\t%s\n", "A", "A+2", "A+4", "A+6");
+    while (outerCounter <= 15) {
+        printf("%d\t", (outerCounter));
+        while (innerCounter <= 6) {
+            printf("%d\t", (outerCounter + innerCounter));
+            innerCounter += 2;
 
-        printf("%d\n", ((counter + 1) * 1000));
-        counter++;
+        }
+        printf("\n");
+        innerCounter = 2;
+        outerCounter += 3;
 
     }
 

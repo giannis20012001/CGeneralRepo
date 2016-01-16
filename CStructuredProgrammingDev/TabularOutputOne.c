@@ -11,6 +11,7 @@ int main (void) {
     while (counter < 10) {
         printf("%d\t", (counter + 1));
         printf("%d\t\t", ((counter + 1) * 10));
+
         if (counter < 9)
             printf("%d\t\t", ((counter + 1) * 100));
         else
