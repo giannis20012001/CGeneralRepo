@@ -25,6 +25,7 @@ int main (void) {
         scanf("%f", &principal);
 
     }
+
     return 0;
 
 }

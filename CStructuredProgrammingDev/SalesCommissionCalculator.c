@@ -20,6 +20,7 @@ int main (void) {
         scanf("%f", &sales);
 
     }
+
     return 0;
 
 }

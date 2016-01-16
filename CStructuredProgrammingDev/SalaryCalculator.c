@@ -29,6 +29,7 @@ int main (void) {
         scanf("%d", &workHours);
 
     }
+
     return 0;
 
 }
