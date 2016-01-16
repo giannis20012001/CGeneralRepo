@@ -5,7 +5,12 @@
 #include <stdio.h>
 
 int main (void) {
-    int c;
+    int numbers = 1;
+    while (numbers <= 10) {
+        printf("%d   ", numbers);
+        numbers++;
+
+    }
 
     return 0;
 
