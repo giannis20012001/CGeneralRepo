@@ -16,9 +16,39 @@ int main(void) {
         if (side >= 1) {
             if (side <= 20) {
                 while (externalCounter <= side) {
-                    while (internalCounter <= side) {
-                        printf("%s", "*");
-                        internalCounter++;
+                    if (externalCounter == 1) {
+                        while (internalCounter <= side) {
+                            printf("%s", "*");
+                            internalCounter++;
+
+                        }
+
+                    }
+                    else if (externalCounter == side) {
+                        while (internalCounter <= side) {
+                            printf("%s", "*");
+                            internalCounter++;
+
+                        }
+
+                    }
+                    else if (externalCounter < side) {
+                        while (internalCounter <= side) {
+                            if (internalCounter == 1) {
+                                printf("%s", "*");
+
+                            }
+                            else if (internalCounter == side) {
+                                printf("%s", "*");
+
+                            }
+                            else if (internalCounter < side) {
+                                printf("%s", " ");
+
+                            }
+                            internalCounter++;
+
+                        }
 
                     }
                     printf("\n");
