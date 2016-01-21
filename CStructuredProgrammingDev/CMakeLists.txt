@@ -19,3 +19,4 @@ add_executable(PrintingTheDecimalEquivalentOfABinaryNumber PrintingTheDecimalEqu
 add_executable(HowFastIsYourComputer HowFastIsYourComputer.c)
 add_executable(DetectingMultiplesOfTen DetectingMultiplesOfTen.c)
 add_executable(CountingSevens CountingSevens.c)
+add_executable(CheckerboardPatternOfAsterisks CheckerboardPatternOfAsterisks.c)
