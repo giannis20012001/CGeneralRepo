@@ -24,4 +24,4 @@ add_executable(MultiplesOfTowWithAnInfiniteLoop MultiplesOfTowWithAnInfiniteLoop
 add_executable(DiameterCircumferenceAndAreaOfACirle DiameterCircumferenceAndAreaOfACirle.c)
 add_executable(SidesOfATriangle SidesOfATriangle.c)
 add_executable(SidesOfARightTriangle SidesOfARightTriangle.c)
-add_executable(Factorial Factorial.c)
+add_executable(FactorialAlpha FactorialAlpha.c)
