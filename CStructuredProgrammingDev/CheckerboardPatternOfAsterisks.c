@@ -9,10 +9,20 @@ int main (void) {
     int internalCounter = 1;
 
     while (externalCounter <= 8) {
-        printf("%s", "* ");
+        if (externalCounter % 2 == 0) {
+            printf("%s", " ");
+
+        }
+        while (internalCounter <= 8) {
+            printf("%s", "* ");
+            internalCounter++;
+
+        }
+        puts("");
+        externalCounter++;
+        internalCounter = 1;
 
     }
-    puts("Finished adding!!!");
 
     return 0;
 
