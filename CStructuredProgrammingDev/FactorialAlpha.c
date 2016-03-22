@@ -6,7 +6,7 @@
 
 int main (void) {
     int number;
-    int counter = 1;
+    int counter = 0;
     int factorial = 1;
 
     printf("%s", "Enter number(-1 to exit): ");
